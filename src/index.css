@@ -13,6 +13,11 @@ li {
   list-style: none;
 }
 
+input {
+  padding: 5px;
+  margin: 25px 0;
+}
+
 .container {
   max-width: 700px;
   margin: 0 auto;
@@ -40,6 +45,13 @@ li {
 .active {
   height: 25px;
   border: 1px solid silver;
+}
+
+.add-product__btn {
+  margin-left: 25px;
+  padding: 5px;
+  width: 50px;
+  cursor: pointer;
 }
 
 .products__del-btn {

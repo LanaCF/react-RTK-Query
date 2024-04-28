@@ -22,7 +22,7 @@ const AddProduct = () => {
     return (
         <div className="add-product">
             <input value={text} onChange={e => setText(e.target.value)} type="text" placeholder="Enter product name" />
-            <button onClick={clickHandler} >Add</button>
+            <button onClick={clickHandler} className="add-product__btn" >Add</button>
         </div>
     );
 };

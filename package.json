@@ -1,6 +1,7 @@
 {
   "name": "first-app",
   "version": "0.1.0",
+  "homepage": "https://LanaCF.github.io/react-RTK-Query",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
@@ -15,6 +16,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "dev": "concurrently \"npm run server\" \"npm run start\"",
     "server": "json-server -w server/db.json -p 3001",
@@ -42,6 +45,7 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
+    "gh-pages": "^6.1.1",
     "json-server": "^1.0.0-alpha.23"
   }
 }
